@@ -1,2 +1,0 @@
-Requirement already satisfied: tqdm in c:\programdata\anaconda3\lib\site-packages (4.62.3)
-Requirement already satisfied: colorama in c:\programdata\anaconda3\lib\site-packages (from tqdm) (0.4.4)
