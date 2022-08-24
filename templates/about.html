@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clairvoyant</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename='css/about-style.css') }}" rel="stylesheet" type="text/css" >
+        <style>
+            .parallax {
+              /* The image used */
+              background-image: url("/static/images/halo background.png");
+            
+              /* Set a specific height */
+              min-height: 500px;
+            
+              /* Create the parallax scrolling effect */
+              background-attachment: relative;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            </style>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="/" style="font-family:monospace;font-size: xx-large;">Clairvoyant</a>
+                <img src="{{ url_for('static', filename='images/clairvoyant-logo.png') }}" alt="logo" wdith="65" height="65">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/demo">Demo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <!-- Heading Row-->
+        <div class="parallax_one" style="margin-top:0px">
+            <div class="row gx-4 gx-lg-5" style="position: relative;top: 2cm">
+                <div class="col-lg-7" style="position: relative;left: 10%"><img class="parallax_two" width="720" height="300"/></div>
+                <div class="col-lg-5" style="position: relative;right: 9%"">
+                    <h1 style="color:ghostwhite">This is Clairvoyant</h1>
+                    <p style="color:ghostwhite;font-size: 1.2rem">The medical field is intense and, sometimes, even doctors mess up when recognizing threatening conditions. With recent advances, AI has come far enough to accurately recognize even the smallest of features, and our team strives to recognize anomalies in CT scans with unbeatable precision.</p>
+                    <a class="btn btn-primary" href="#!">Call to Action!</a>
+                </div>
+            </div>
+        </div>
+            <!-- Call to Action-->
+            <div class="card text-white bg-secondary text-center" style="margin-bottom:1cm">
+                <h1 class="font-weight-light">Tools</h1>
+            </div>
+            <!-- Content Row-->
+            <div class="container px-4 px-lg-5" style="vertical-align: middle">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div style="display:inline-block;vertical-align:top;">
+                                    <h2 class="card-title">Python</h2>
+                                    <img class="card-img" src="{{ url_for('static', filename='images/Python.png') }}" width="100" height="100">
+                                </div>
+                                <div style="display:inline-block;position: relative;left:0.8rem;top:0.3rem">
+                                    <p class="card-text" style="font-size: 1.2rem">A high-level programming language. Used for training model and most other backend features.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://www.python.org">More Info</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div style="display:inline-block;vertical-align:top;">
+                                    <h2 class="card-title">YOLO&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h2>
+                                    <img class="card-img" src="{{ url_for('static', filename='images/YOLO.png') }}" width="100" height="100">
+                                </div>
+                                <div style="display:inline-block;position: relative;left:0.8rem;top:0.3rem">
+                                    <p class="card-text" style="font-size: 1.2rem">Highly advanced object&nbspdetection algorithm. Used for all model training.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://github.com/ultralytics/yolov5">More Info</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div style="display:inline-block;vertical-align:top;">
+                                    <h2 style="font-size:.7cm;">Roboflow</h2>
+                                    <img class="card-img" src="{{ url_for('static', filename='images/Roboflow.png') }}" width="40" height="105">
+                                </div>
+                                <div style="display:inline-block;position: relative;left:0.8rem;top:0.3rem">
+                                    <p class="card-text" style="font-size: 1.2rem">Tool for labeling, augmenting, and training datasets. Used primarily for labeling and exporting.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://roboflow.com/">More Info</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-4 px-lg-5" style="vertical-align: middle">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div style="display:inline-block;vertical-align:top;">
+                                    <h2 class="card-title">Flask&nbsp</h2>
+                                    <img class="card-img" src="{{ url_for('static', filename='images/Flask.png') }}" width="100" height="100">
+                                </div>
+                                <div style="display:inline-block;position: relative;left:0.8rem;top:0.3rem">
+                                    <p class="card-text" style="font-size: 1.2rem">Web framework used to write backend website applications in Python.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://flask.palletsprojects.com/en/2.2.x/">More Info</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div style="display:inline-block;vertical-align:top;">
+                                    <h2 class="card-title">HTML</h2>
+                                    <img class="card-img" src="{{ url_for('static', filename='images/HTML.png') }}" width="120" height="100">
+                                </div>
+                                <div style="display:inline-block;position: relative;left:0.8rem;top:0.3rem">
+                                    <p class="card-text" style="font-size: 1.2rem">Markup language used in simple websites. Used with CSS to make front-end of this website.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://en.wikipedia.org/wiki/HTML">More Info</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div style="display:inline-block;vertical-align:top;">
+                                    <h2 class="card-title">Kaggle</h2>
+                                    <img class="card-img" src="{{ url_for('static', filename='images/Kaggle.png') }}" width="40" height="100">
+                                </div>
+                                <div style="display:inline-block;position: relative;left:0.8rem;top:0.3rem">
+                                    <p class="card-text" style="font-size: 1.2rem">Online community&nbsp&nbsp platform for data scientists and machine learning enthusiasts. Used to find datasets.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://www.kaggle.com/">More Info</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-white bg-secondary text-center" style="margin-bottom:1cm">
+                <h1 class="font-weight-light">Team</h1>
+            </div>
+            <!-- Content Row-->
+            <div class="container px-4 px-lg-5" style="vertical-align: middle">
+                <div class="row gx-4 gx-lg-5" style="align-items: baseline;justify-content: center;">
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="{{ url_for('static', filename='images/brayden.png') }}" alt="pic" width="ms-auto" height="ms-auto">
+                            <h5 class="card-title mb-0" style="text-align: center">Daniel Liu</h5>
+                            <div class="card-text text-black-50" style="text-align: center">Description</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="{{ url_for('static', filename='images/brayden.png') }}" alt="pic" width="ms-auto" height="ms-auto">
+                            <h5 class="card-title mb-0" style="text-align: center">Andrey Korolev</h5>
+                            <div class="card-text text-black-50" style="text-align: center">Description</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="{{ url_for('static', filename='images/brayden.png') }}" alt="pic" width="ms-auto" height="ms-auto">
+                            <h5 class="card-title mb-0" style="text-align: center">Sriram Pankanti</h5>
+                            <div class="card-text text-black-50" style="text-align: center">Description</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="{{ url_for('static', filename='images/brayden.png') }}" alt="pic" width="ms-auto" height="ms-auto">
+                            <h5 class="card-title mb-0" style="text-align: center">Supraj Gunda</h5>
+                            <div class="card-text text-black-50" style="text-align: center">Description</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="{{ url_for('static', filename='images/brayden.png') }}" alt="pic" width="ms-auto" height="ms-auto">
+                            <h5 class="card-title mb-0" style="text-align: center">Brayden Uglione </h5>
+                            <div class="card-text text-black-50" style="text-align: center">Brayden enjoys playing video games and basketball with his friends and watching movies with his family in his free time. He hopes to pursue a cybersecurity occupation when he grows up.</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="{{ url_for('static', filename='images/brayden.png') }}" alt="pic" width="ms-auto" height="ms-auto">
+                            <h5 class="card-title mb-0" style="text-align: center">Alejandro Moro Araujp</h5>
+                            <div class="card-text text-black-50" style="text-align: center">Description</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Call to Action-->
+            <div class="card text-white bg-secondary text-center" style="margin-bottom:1cm">
+                <h1 class="font-weight-light">Future Work</h1>
+            </div>
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5" style="align-items: center;justify-content: center;">
+                <div class="col-lg-5">
+                    <p>In the future, we would improve our model to be able to detect different types of brain tumors, their grade, and the risk of an operation. We would also like our model to detect different types of hemorrhages as well as if their severity constitutes an operation.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    </body>
+</html>

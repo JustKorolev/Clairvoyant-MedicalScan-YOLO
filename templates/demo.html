@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clairvoyant</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static',filename='css/demo-style.css') }}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="/" style="font-family:monospace;font-size: xx-large;">Clairvoyant</a>
+                <img src="{{ url_for('static', filename='images/clairvoyant-logo.png') }}" alt="logo" width="65" height="65">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/demo">Demo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+   	<div>
+    <style> 
+        .colContainer{  
+             background-image: url('https://static.vecteezy.com/system/resources/previews/002/858/856/non_2x/gradient-blue-brain-neuron-background-free-vector.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        </style>
+        <div class = "colContainer">
+            <div class = "leftCol">
+                <h2 class = "inputFile"> Input a File </h2>
+                <p style = "font-style: normal; font-family: sans-serif; text-align:center;">Choose a file from your computer</p>
+                <form action = "/demo" method = "POST" enctype = "multipart/form-data">
+                    <input type = "file" name = "file" />
+                    <input type = "submit" />
+                </form>
+            </div>
+            <div class = "midCol">
+                <h2 class = "chooseImage"> Choose an Image </h2>
+                <p style = "font-style: normal; font-family: sans-serif; text-align:center;">Choose the images below to test the model</p>
+                <h4 class = "scoliosis"> Scoliosis </h4>
+                <div class = "scoliosisImgs">
+                    <img id = "image" class = "leftImg" src="https://spinaltech.com/uploaded/uploads/1.-Chen_Slide5_Out.jpg" width = 150px height = 150px onclick = "makeInput(this.id)"/>
+                    <img id = "image1" class = "rightImg" src="https://musckids.org/-/sm/kids/i/orthopaedics/conditions/scoliosis.ashx?h=396&w=250&hash=4EA62971A83F8C4B00770BD7956F3221" width = 150px height = 150px onclick = "makeInput(this.id)"/>
+                </div>
+                <h4 class = "brainTumor"> Brain Tumor </h4>
+                <img id = "image2" class = "leftImg" src="https://st2.depositphotos.com/2779653/6132/i/950/depositphotos_61326269-stock-photo-mri-brain-show-brain-tumor.jpg" width = 150px height = 150px onclick = "makeInput(this.id)"/>
+                <img id = "image3" class = "rightImg" src="https://static-02.hindawi.com/articles/jhe/volume-2020/2483285/figures/2483285.fig.0010a.svgz" width = 150px height = 150px onclick = "makeInput(this.id)"/>
+                <h4 class = "brainHemorrhage"> Brain Hemorrhage </h4>
+                <img id = "image4" class = "leftImg" src="https://media.sciencephoto.com/image/c0371593/800wm" width = 150px height = 150px onclick = "makeInput(this.id)"/>
+                <img id = "image5" class = "rightImg" src="https://media.sciencephoto.com/c0/27/17/75/c0271775-400px-wm.jpg" width = 150px height = 150px onclick = "makeInput(this.id)"/>
+            </div>
+            <div class = "rightCol">
+                <h2 class = "outputImg"> Detection </h2>
+                <p>The confidence of {{labels}} = {{confidence}}</p>
+                <img src="static/images/{{ user_image }}" width = 370px height = 380px style = "margin-left: 15%; object-fit:cover; max-width: 100%;
+        max-height: 100%;">
+            </div>
+        </div>
+        <footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+        </footer>
+    </div>
+
+    </body>
+</html>
