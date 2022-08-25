@@ -11285,13 +11285,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}
-.colContainer {
-  display: flex;
-  background-image: url('https://thumbs.dreamstime.com/b/white-stylized-bra…bg-simply-polygonal-line-background-109096796.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
 .leftCol {
   margin-top: 20%;
   margin-left: 3%;
@@ -11301,7 +11294,7 @@ textarea.form-control-lg {
   width: 400px;
   padding: 20px;
   bottom: 300px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.75);
   border-radius: 20px;
 }
 .midCol {
@@ -11328,7 +11321,7 @@ textarea.form-control-lg {
   width: 400px;
   padding: 22px;
   bottom: 300px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.75);
   border-radius: 20px;
 }
 .inputFile{
@@ -11354,7 +11347,7 @@ textarea.form-control-lg {
   border-radius: 7px;
 }
 .leftImg{
-  margin-left: 15.5%;
+  margin-right: 20px;
   width: 150px;
   height: 150px;
   object-fit: cover;
