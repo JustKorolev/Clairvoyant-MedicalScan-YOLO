@@ -10,19 +10,19 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ url_for('static',filename='css/demo-style.css') }}" rel="stylesheet" />
+        <script src="{{url_for('static', filename='js/index.js')}}"></script>
     </head>
     <body>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-                <a class="navbar-brand" href="/" style="font-family:monospace;font-size: xx-large;">Clairvoyant</a>
-                <img src="{{ url_for('static', filename='images/clairvoyant-logo.png') }}" alt="logo" width="65" height="65">
+                <a class="navbar-brand" href="#!">Start Bootstrap</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/demo">Demo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/demo">Demo</a></li>
                     </ul>
                 </div>
             </div>
@@ -30,13 +30,6 @@
 
 
    	<div>
-    <style> 
-        .colContainer{  
-             background-image: url('https://static.vecteezy.com/system/resources/previews/002/858/856/non_2x/gradient-blue-brain-neuron-background-free-vector.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        </style>
         <div class = "colContainer">
             <div class = "leftCol">
                 <h2 class = "inputFile"> Input a File </h2>
@@ -71,7 +64,7 @@
         <footer class="py-5 bg-dark">
             <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
         </footer>
-    </div>
+   	</div>
 
     </body>
 </html>
