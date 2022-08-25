@@ -78,6 +78,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -1190,13 +1191,21 @@ progress {
   .col-md-6 {
     flex: 1;
     width: 50%;
-    transition: .5s ease;
+    transition: .4s ease;
   }
 
 
   .col-md-6:hover{
-    height: 50%;
+    height: 100%;
     width: 25%;
+  }
+
+  .col-md-6:hover .card{
+    font-size: 110%;
+  }
+
+  .col-md-6:hover .card-title{
+    font-size: 130%;
   }
 
   .col-md-7 {
@@ -4533,14 +4542,15 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
+  width:100%;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
-  transition: .3s ease;
+  transition: .4s ease;
 }
 .card:hover {
-  box-shadow: 0 0 1cm .5cm rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0 2cm .5cm rgba(0, 0, 0, 0.15) !important;
 }
 
 .card > hr {
@@ -4572,7 +4582,12 @@ textarea.form-control-lg {
 }
 
 .card-title {
-  margin-bottom: 0.5rem;
+  margin-top: 2.5%;
+  transition: .4s ease;
+}
+
+.card-title:hover {
+  margin-bottom: 0rem;
 }
 
 .card-subtitle {
@@ -4581,7 +4596,7 @@ textarea.form-control-lg {
 }
 
 .card-text:last-child {
-  margin-bottom: 0;
+  padding: 3%;
 }
 
 .card-link + .card-link {
@@ -5626,18 +5641,8 @@ textarea.form-control-lg {
   object-fit: cover;
   width:100%;
   height:400px;
-  transition: .5s ease;
+  transition: .4s ease;
   backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
 }
 
 
@@ -7852,7 +7857,9 @@ textarea.form-control-lg {
 
 .parallax_one { 
   background-image: url("/static/images/halobackground.png");
-  height: 500px;
+  height: 70%;
+  position: relative;
+  overflow: hidden;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
