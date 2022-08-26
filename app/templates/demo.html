@@ -29,8 +29,12 @@
             </div>
         </nav>
     <div class = "parallax_three">
+        <div class = "topCol">
+            <p style = "font-family:monospace;">Welcome to the Clairvoyant Demo page where you can try out Clairvoyant for yourself! You can either upload your own image or use one of our 6 sample images for convenience. Clicking on one of the 6 images will download it to your computer.</p>
+        </div>
     <div class = "demoContainer">
    	<div>
+
         <div class = "colContainer">
             <div class = "leftCol">
                 <h2 class = "inputFile"> Input a File </h2>
@@ -75,7 +79,9 @@
             </div>
             <div class = "rightCol">
                 <h2 class = "outputImg"> Detection </h2>
-                <p>The confidence of {{labels}} = {{confidences}}</p>
+                <div class = "Imgs">
+                    <p>The confidence of {{labels}} = {{confidences}}</p>
+                </div>
                 <div class = "Imgs">
                     <img src="static/user_images/{{ user_image }}" width = 370px height = 380px style = " object-fit:cover; max-width: 100%;
         max-height: 100%;">
@@ -88,10 +94,10 @@
         <div class = "explanation">
             <h2 class = "inputFile">Confusion Matrix</h2>
             <br></br>
-            <p style = "font-size: 24px; font-family: monospace;">Our model predicts the probability that a tumor, hemorrhage, or a scoliosis case is present in the given photo. Our model predicts 77% of hemmorhages correctly, 86% of scoliosis cases correctly and 49% of tumors correctly. </p>
+            <p style = "font-size: 15px; font-family: monospace;">Our model predicts the probability that a tumor, hemorrhage, or a scoliosis case is present in the given photo. Our model predicts 77% of hemmorhages correctly, 86% of scoliosis cases correctly and 49% of tumors correctly. </p>
         </div>
         <div class = "matrixContainer">
-            <img class="matrixImg" src="{{ url_for('static', filename='images/ConfusionMatrix.png') }}" width = 845px height = 770px>
+            <img class="matrixImg" src="{{ url_for('static', filename='images/ConfusionMatrix.png') }}" width = 100% height = 90%>
         </div>
     </div>
     <footer class="py-5 bg-dark">
