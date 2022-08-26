@@ -11286,11 +11286,21 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.parallax_three {
+  /* The image used */
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/858/856/non_2x/gradient-blue-brain-neuron-background-free-vector.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .colContainer {
   display: flex;
-  background-image: url('https://thumbs.dreamstime.com/b/white-stylized-bra…bg-simply-polygonal-line-background-109096796.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 .leftCol {
   margin-top: 20%;
@@ -11301,82 +11311,172 @@ textarea.form-control-lg {
   width: 400px;
   padding: 20px;
   bottom: 300px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.75);
   border-radius: 20px;
 }
 .midCol {
   margin-top: 10%;
   margin-left: 2%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   flex: 30%;
   top: 300px;
   height: 700px;
   width: 400px;
   padding: 20px;
   bottom: 300px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.75);
   border-radius: 20px;
 }
 .rightCol {
   margin-top: 15%;
   margin-left: 2%;
   margin-right: 3%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   flex: 30%;
   top: 300px;
   height: 500px;
   width: 400px;
   padding: 22px;
   bottom: 300px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.75);
   border-radius: 20px;
 }
 .inputFile{
   font-style: normal;
-  font-family: sans-serif;
+  font-family: monospace;
   text-align:center;
 }
 .chooseImage{
   font-style: normal;
-  font-family: sans-serif;
+  font-family: monospace;
   text-align:center;
 }
 .outputImg{
   font-style: normal;
-  font-family: sans-serif;
+  font-family: monospace;
   text-align:center;
 }
 .rightImg{
-  margin-left: 20px;
   width: 150px;
-  height: 150px;
+  height: 150px; 
   object-fit: cover;
   border-radius: 7px;
+  margin-left: 9%;
 }
 .leftImg{
-  margin-left: 15.5%;
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 7px;
+  margin-right: 8%;
 }
 .chooseImg{
   font-style: normal;
-  font-family: sans-serif;
+  font-family: monospace;
   text-align:center;
 }
 .scoliosis{
   font-style: normal;
-  font-family: sans-serif;
+  font-family: monospace;
   text-align:center;
 }
 .brainTumor{
   font-style: normal;
-  font-family: sans-serif;
+  font-family: monospace;
   text-align:center;
 }
 .brainHemorrhage{
   font-style: normal;
-  font-family: sans-serif;
+  font-family: monospace;
   text-align:center;
+}
+.ConfusionMatrix{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+  height: 800px;
+  margin-bottom: 10%;
+}
+.explanation{
+  flex: 50%;
+  padding: 10%;
+}
+.matrixContainer{
+  flex: 50%;
+  padding: 20px;
+  height: 770px;
+}
+.matrixImg{
+  object-fit: cover;
+  border-radius: 20px;
+  border-color: black;
+}
+.Imgs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons {
+  margin-left: 15%;
+  font-size: 20%;
+
+}
+
+.fButton {
+  width: 250px;
+  border: 25px;
+  background-color: #F0F0F0;
+  transition-duration: 0.4s;
+  border-color: skyblue;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.fButton:hover {
+  width: 113px;
+  border: 25px;
+  background-color: #72A0C1;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.fButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.sButton {
+  width: 100px;
+  border-radius: 25px;
+  background-color: #F0F0F0;
+  transition-duration: 0.4s;
+  border-color: skyblue;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.sButton:hover {
+  width: 100px;
+  border-radius: 25px;
+  background-color: #72A0C1;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.sButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.testImages {
+  transition-duration: 0.4s;
+}
+
+.testImages:hover {
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
