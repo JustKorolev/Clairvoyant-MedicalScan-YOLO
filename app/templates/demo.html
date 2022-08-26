@@ -91,10 +91,10 @@
    	</div>
 
     <div class = "ConfusionMatrix">
-        <div class = "explanation">
-            <h2 class = "inputFile">Confusion Matrix</h2>
+        <div class = "explanation" style="padding:40px">
+            <h1 class = "inputFile" style="position:relative;bottom:20px;font-size: 40px;">Confusion Matrix</h1>
             <br></br>
-            <p style = "font-size: 15px; font-family: monospace;">Our model predicts the probability that a tumor, hemorrhage, or a scoliosis case is present in the given photo. Our model predicts 77% of hemmorhages correctly, 86% of scoliosis cases correctly and 49% of tumors correctly. </p>
+            <p style = "font-size: 32px; font-family: monospace;position:relative;bottom:30px">Our model predicts the probability that a tumor, hemorrhage, or a scoliosis case is present in the given photo. Our model predicts 77% of hemmorhages correctly, 86% of scoliosis cases correctly and 49% of tumors correctly. </p>
         </div>
         <div class = "matrixContainer">
             <img class="matrixImg" src="{{ url_for('static', filename='images/ConfusionMatrix.png') }}" width = 100% height = 90%>

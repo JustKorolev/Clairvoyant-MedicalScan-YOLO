@@ -4055,6 +4055,7 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
+
 }
 .navbar-nav {
   display: flex;
@@ -11285,4 +11286,29 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+
+.midCol {
+  margin-left:24%;
+  margin-top:5%;
+  margin-right:24%;
+  flex:auto;
+  top: 300px;
+  height: 10%;
+  width: 5%;
+  padding: 20px;
+  bottom: 300px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+
+.rules{
+  margin: 0 auto;
+  padding: 10px;
+  height: 5%;
+  width: 100%;
+  background-color: rgba(0,0,0,1);
+}
+.newCC{
+  display: flex;
 }
