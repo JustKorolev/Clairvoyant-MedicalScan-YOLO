@@ -46,7 +46,7 @@
         <!-- Heading Row-->
         <div class="parallax_one" style="margin-top:0px">
             <div class="row gx-4 gx-lg-5" style="position:relative;top: 20%;padding:0px">
-                <div class="col-lg-5" style="margin-left: max(100px,8%);"><img style="float:right;width:inherit;height:auto;min-width:700px" src="static/images/pitch_image.jpg" height="275px"/></div>
+                <div class="col-lg-5" style="margin-left: max(100px,8%);"><img style="float:right;width:inherit;height:auto;min-width:700px;box-shadow: 0 0 1cm .5cm rgba(0, 0, 0, 0.15)" src="static/images/pitch_image.jpg" height="275px"/></div>
                 <div class="col-lg-5" >
                         <h1 style="color:ghostwhite;font-size: 2rem;">This is Clairvoyant</h1>
                         <p style="color:ghostwhite;font-size: 1.5rem">The medical field is intense and, sometimes, even doctors mess up when recognizing threatening conditions. With recent advances, AI has come far enough to accurately recognize even the smallest of features, and our team strives to recognize anomalies in CT scans with unbeatable precision.</p>
@@ -64,11 +64,11 @@
                     <div class="col-md mb-5">
                         <div class="card h-100">
                             <div class="card-body">
-                                <div style="display:inline-block;vertical-align:top;">
+                                <div style="float: left">
                                     <h2 class="card-title">Python</h2>
                                     <img class="card-img" src="{{ url_for('static', filename='images/Python.png') }}" width="100" height="100">
                                 </div>
-                                <div style="display:inline-block;position: relative;left:0.8rem;top:0.3rem">
+                                <div style="float: right">
                                     <p class="card-text" style="font-size: 1.2rem">A high-level programming language. Used for training model and most other backend features.</p>
                                 </div>
                             </div>
@@ -78,21 +78,7 @@
                     <div class="col-md mb-5">
                         <div class="card h-100">
                             <div class="card-body">
-                                <div style="display:inline-block;vertical-align:top;">
-                                    <h2 class="card-title">YOLO&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h2>
-                                    <img class="card-img" src="{{ url_for('static', filename='images/YOLO.png') }}" width="100" height="100">
-                                </div>
-                                <div style="display:inline-block;position: relative;left:0.8rem;top:0.3rem">
-                                    <p class="card-text" style="font-size: 1.2rem">Highly advanced object&nbspdetection algorithm. Used for all model training.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://github.com/ultralytics/yolov5">More Info</a></div>
-                        </div>
-                    </div>
-                    <div class="col-md mb-5">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <div style="display:inline-block;vertical-align:top;">
+                                <div style="float: left">
                                     <h2 style="font-size:.7cm;">Roboflow</h2>
                                     <img class="card-img" src="{{ url_for('static', filename='images/Roboflow.png') }}" width="40" height="105">
                                 </div>
@@ -103,50 +89,64 @@
                             <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://roboflow.com/">More Info</a></div>
                         </div>
                     </div>
+                    <div class="col-md mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div style="float: left">
+                                    <h2 class="card-title">YOLO&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h2>
+                                    <img class="card-img" src="{{ url_for('static', filename='images/YOLO.png') }}" width="100" height="100">
+                                </div>
+                                <div style="float: right">
+                                    <p class="card-text" style="font-size: 1.2rem">Highly advanced object&nbspdetection algorithm. Used for all model training.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://github.com/ultralytics/yolov5">More Info</a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container px-4 px-lg-5" style="vertical-align: middle">
                 <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-4 mb-5">
+                    <div class="col-md mb-5">
                         <div class="card h-100">
                             <div class="card-body">
-                                <div style="display:inline-block;vertical-align:top;">
+                                <div style="float: left">
                                     <h2 class="card-title">Flask&nbsp</h2>
                                     <img class="card-img" src="{{ url_for('static', filename='images/Flask.png') }}" width="100" height="100">
                                 </div>
-                                <div style="display:inline-block;position: relative;left:0.8rem;top:0.3rem">
+                                <div style="float: right">
                                     <p class="card-text" style="font-size: 1.2rem">Web framework used to write backend website applications in Python.</p>
                                 </div>
                             </div>
-                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://flask.palletsprojects.com/en/2.2.x/">More Info</a></div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://www.python.org">More Info</a></div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-5">
+                    <div class="col-md mb-5">
                         <div class="card h-100">
                             <div class="card-body">
-                                <div style="display:inline-block;vertical-align:top;">
-                                    <h2 class="card-title">HTML</h2>
-                                    <img class="card-img" src="{{ url_for('static', filename='images/HTML.png') }}" width="120" height="100">
-                                </div>
-                                <div style="display:inline-block;position: relative;left:0.8rem;top:0.3rem">
-                                    <p class="card-text" style="font-size: 1.2rem">Markup language used in simple websites. Used with CSS to make front-end of this website.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://en.wikipedia.org/wiki/HTML">More Info</a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <div style="display:inline-block;vertical-align:top;">
-                                    <h2 class="card-title">Kaggle</h2>
-                                    <img class="card-img" src="{{ url_for('static', filename='images/Kaggle.png') }}" width="40" height="100">
+                                <div style="float: left">
+                                    <h2 style="font-size:.7cm;">Kaggle</h2>
+                                    <img class="card-img" src="{{ url_for('static', filename='images/Kaggle.png') }}" width="40" height="105">
                                 </div>
                                 <div style="display:inline-block;position: relative;left:0.8rem;top:0.3rem">
                                     <p class="card-text" style="font-size: 1.2rem">Online community&nbsp&nbsp platform for data scientists and machine learning enthusiasts. Used to find datasets.</p>
                                 </div>
                             </div>
-                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://www.kaggle.com/">More Info</a></div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://roboflow.com/">More Info</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div style="float: left">
+                                    <h2 class="card-title">HTML</h2>
+                                    <img class="card-img" src="{{ url_for('static', filename='images/HTML.png') }}" width="100" height="100">
+                                </div>
+                                <div style="float: right">
+                                    <p class="card-text" style="font-size: 1.2rem">Markup language used in simple websites. Used with CSS to make front-end of this website.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://github.com/ultralytics/yolov5">More Info</a></div>
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@
             <!-- Content Row-->
             <div class="container px-4 px-lg-8" style="vertical-align: middle">
                 <div class="row gx-4 gx-lg-4" style="align-items: baseline;justify-content: center;">
-                    <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="col-xl-3 col-md-6 mb-4" style="min-width:240px">
                         <div class="card border-0 shadow">
                             <img src="{{ url_for('static', filename='images/daniel.png') }}" class="team">
                             <h5 class="card-title mb-0" style="text-align: center">Daniel Liu</h5>
@@ -166,35 +166,35 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6 mb-4" alt="Avatar">
+                    <div class="col-xl-3 col-md-6 mb-4" style="min-width:240px">
                         <div class="card border-0 shadow">
                             <img src="{{ url_for('static', filename='images/andrey.jpeg') }}" class="team">
                             <h5 class="card-title mb-0" style="text-align: center">Andrey Korolev</h5>
                             <div class="card-text text-black-50" style="text-align: center">Andrey is a senior at Brooklyn Technical High School. He is the leader of programming on his robotics team and hopes to apply his new knowledge to lead the team to victory. In his free time, he enjoys playing basketball, working out, and watching anime.</div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="col-xl-3 col-md-6 mb-4" style="min-width:240px">
                         <div class="card border-0 shadow">
-                            <img src="{{ url_for('static', filename='images/brayden.png') }}" class="team">
+                            <img src="{{ url_for('static', filename='images/sriram.png') }}" class="team">
                             <h5 class="card-title mb-0" style="text-align: center">Sriram Pankanti</h5>
-                            <div class="card-text text-black-50" style="text-align: center">Description</div>
+                            <div class="card-text text-black-50" style="text-align: center">Sriram is an 11th grader in high school who swims competitively and enjoys playing basketball with his friends. In the future he hopes to be somewhere in the software development field.</div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="col-xl-3 col-md-6 mb-4" style="min-width:240px">
                         <div class="card border-0 shadow">
                             <img src="{{ url_for('static', filename='images/supraj.png') }}" class="team">
                             <h5 class="card-title mb-0" style="text-align: center">Supraj Gunda</h5>
                             <div class="card-text text-black-50" style="text-align: center">Supraj is a senior at John F. Kennedy Memorial High School. Through research programs, such as the AI Summer Camp, he hopes to explore the interdisciplinary applications of machine learning. He also loves pursuing art and astronomy in his free time.</div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="col-xl-3 col-md-6 mb-4" style="min-width:240px">
                         <div class="card border-0 shadow">
                             <img src="{{ url_for('static', filename='images/brayden.png') }}" class="team">
                             <h5 class="card-title mb-0" style="text-align: center">Brayden Uglione </h5>
                             <div class="card-text text-black-50" style="text-align: center">Brayden enjoys playing video games and basketball with his friends and watching movies with his family in his free time. He hopes to pursue a cybersecurity occupation when he grows up.</div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="col-xl-3 col-md-6 mb-4" style="min-width:240px">
                         <div class="card border-0 shadow">
                             <img src="{{ url_for('static', filename='images/alejandro.jpeg') }}" class="team">
                             <h5 class="card-title mb-0" style="text-align: center">Alejandro Moro Araujo</h5>
@@ -208,9 +208,9 @@
                 <h1 class="font-weight-light">Future Work</h1>
             </div>
             <!-- Heading Row-->
-            <div class="row gx-4 gx-lg-5 align-items-center my-5" style="align-items: center;justify-content: center;">
+            <div class="row gx-4 gx-lg-5 align-items-center my-5" style="align-items: center;justify-content: center;margin:-20cm">
                 <div class="col-lg-5">
-                    <p>In the future, we would improve our model to be able to detect different types of brain tumors, their grade, and the risk of an operation. We would also like our model to detect different types of hemorrhages as well as if their severity constitutes an operation.</p>
+                    <p style="color:rgb(0, 0, 0);font-size: 1.5rem;text-align: center">In the future, we would improve our model to be able to detect different types of brain tumors, their grade, and the risk of an operation. We would also like our model to detect different types of hemorrhages as well as if their severity constitutes an operation.</p>
                 </div>
             </div>
         </div>
